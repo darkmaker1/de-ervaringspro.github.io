@@ -82,7 +82,7 @@ p{
         position: relative;
         img{
             height: 100%;
-            width: 100%;
+            width: 120%;
             position: fixed;
             z-index: -1;
             object-fit: fit;
@@ -90,7 +90,7 @@ p{
         .title{
             padding: 2.5rem;
             position: relative;
-            top: 20%;
+            top: 25%;
             left: 10%;
             border: 6px solid $purple;
             color: $purple;
