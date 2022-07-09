@@ -99,3 +99,19 @@ p{
         }
     }
 }
+
+.page2 {
+    height: 100vh;
+    position: relative;
+    img{
+        height: 100%;
+        width: 120%;
+        position: fixed;
+        z-index: -1;
+        object-fit: fit;
+}
+}
+
+h3 {
+color: $purple;
+}
