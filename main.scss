@@ -40,6 +40,9 @@ nav{
 h2{
     font-size: $h2-pc;
 }
+h3{
+    font-size: $h3-pc;           
+}
 p{
     font-size: 2.5rem;
 }
@@ -80,17 +83,21 @@ p{
     .landing{
         height: 100vh;
         position: relative;
+        overflow: hidden;
         img{
             height: 100%;
-            width: 120%;
-            position: fixed;
+            width: 100%;
+            position: absolute;
             z-index: -1;
-            object-fit: fit;
-        }
+            top: 85px;
+            // -o-object-fit: cover;
+            //    object-fit: cover;
+        };
+
         .title{
             padding: 2.5rem;
             position: relative;
-            top: 25%;
+            top: 20%;
             left: 10%;
             border: 6px solid $purple;
             color: $purple;
@@ -101,17 +108,58 @@ p{
 }
 
 .page2 {
-    height: 100vh;
+    // height: 100vh;
     position: relative;
-    img{
+    display: flex;
+    .background-img{
+        
         height: 100%;
         width: 120%;
-        position: fixed;
+        position: absolute;
         z-index: -1;
-        object-fit: fit;
-}
+        // -o-object-fit: cover;
+        //    object-fit: cover;
+    };
+    h2 {
+        color: $purple;
+        }
+    .about-boxes{
+        flex: 1;
+        @include flexCenter(column);
+        gap: 2rem;
+        padding-left: 5%;
+        margin-top: 5rem;
+        padding: 1rem;
+    .about-box{
+        width: 50rem;
+        height: 20rem;
+        background-color: $purple;
+        border: 4px solid $yellow;
+        border-radius: 48px 24px;
+        padding: 1rem;
+        @include flexCenter(column);
+        h3{
+            text-align: center;
+        }
+    }
+    }
+    .title-img{
+        flex: 1;
+        padding: 1rem;
+        @include flexCenter(column);
+        img{
+            height: 40rem;
+            margin-bottom: 1rem;
+            width: 100%
+        }
+        p{
+            background-color: white;
+            border-radius: 48px 24px;
+            padding: 1rem;
+            color: #000;
+            border: 4px solid $purple;
+        }
+    }
 }
 
-h3 {
-color: $purple;
-}
+
