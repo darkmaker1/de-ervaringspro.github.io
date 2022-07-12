@@ -10,23 +10,31 @@
 </head>
 <body>
                             <!--Navigatiebalk -->
-<nav>
-        <div class="logo-nav">
-            <img src="./imgs/logo.png" alt="logo">
-            <p id="logo-name">De Ervaringspro</p>
+<nav id="nav">
 
+    <div id="menu-btn" class="menu-btn">
+        <div class="menu-btn-burger"></div>
+      </div>
+
+
+        <div class="logo-nav">
+            <a href="#home"><img src="./imgs/logo.png" alt="logo"></a>
+            <a href="#home" class="hide-mobile"><p id="logo-name">De Ervaringspro</p></a>
+
+        
     </div>
     <ul>
         <li><a href="#about">Over ons</a></li>
         <li><a href="#location">Locatie</a></li>
         <li><a href="#team">Samenwerking</a></li>
         <li><a href="#youth">Traject</a></li>
+        <li><a class="hide-pc" href="#contact">Contact</a></li>
     </ul>
-      <a href="#contact">Contact</a>
+      <a class="hide-mobile" href="#contact">Contact</a>
 </nav>
 
                                 <!--Pagina 1 -->
-<div class="landing">
+<div class="landing" id="home">
     <img src="./imgs/background-landing.jpg" alt="landing-img">
     <div class="title">
         <h2>De Ervaringspro</h2>
@@ -35,7 +43,7 @@
     </div>
 </div>
                                 <!--Pagina 2 -->
-    <div class="page-2">
+    <div class="page-2" id="about">
         <img class="background-img" src="./imgs/background-over.jpg" alt="background-img">
     <div class="about-boxes">
             <div class="about-box">
@@ -45,21 +53,21 @@
                     mensen met dezelfde visie. </p>
             </div>
             
-            <div class="about-box">
+            <div class="about-box magic-box">
                 <h3>Doel?</h3>
                 <p> Als uiteindelijk doel,
                     samen een beweging in gang te zetten,
                     waar niemand meer om heen kan.  </p>
             </div>
             
-            <div class="about-box">
+            <div class="about-box magic-box">
                 <h3>Zorg?</h3>
                 <p> Een betere, betrouwbaar zorgsysteem, met aandacht voor de mens,
                     waarbij kwetsbaarheid een kracht is
                     en afkomst en geld er niet toe doet. </p>
             </div>
             
-            <div class="about-box">
+            <div class="about-box magic-box">
                 <h3>Verbinding?</h3>
                 <p> Wij willen verbinden en indien nodig uitleg gaan geven,
                     hoe het voelt om in de zorg te hebben gewoond.
@@ -69,8 +77,8 @@
      </div>
         <div class="title-img">
             <h2>Over De Ervaringspro</h2>
-            <img src="./imgs/about-photo.jpg" alt="about">
-            <p>Bij de Ervaringspro zijn wij er voor jou. Onze ervaringen 
+            <img src="./imgs/about-photo.jpg" alt="about" class="hide-mobile">
+            <p class="magic-box">Bij de Ervaringspro zijn wij er voor jou. Onze ervaringen 
             van de zorg, bieden jou een oplossing. Lukt het jou  
             maar niet om gelukkig te zijn of ligt je leven overhoop?  
             Wij zijn er voor jou. Hoe dieper de put, hoe verder je  
@@ -88,11 +96,11 @@
         </div>
     </div>
                                     <!--Pagina 3 -->
-    <div class="page-3">
+    <div class="page-3" id="location">
         <img class="background-img-locatie" src="/imgs/background-locatie.jpg" alt="background-img">
     <div class="locatie-info">
         
-        <p>Thithagalle Is het drop waar het allemaal gebeurt.
+        <p class="magic-box">Thithagalle Is het drop waar het allemaal gebeurt.
             Het zit 15 Minuten van de zee in de jungle.
             <br>
             <br>
@@ -116,20 +124,20 @@
     </div>
     <div class="locatie">
         <h2>Locatie</h2>
-        <img src="./imgs/foto-huis.jpg" alt="locatie">
-        <p>Kathaluwa, Ahangama
+        <img src="./imgs/foto-huis.jpg" alt="locatie" class="hide-mobile">
+        <p class="magic-box">Kathaluwa, Ahangama
         2973+P5 Ahangama, Sri Lanka</p>
     </div>
 
 </div>
 
-    <div class="page-4">
+    <div class="page-4" id="team">
         <img class="samenwerking-img" src="/imgs/background-partners.jpg" alt="background-img">
         <h2>Samenwerking</h2>
     
 
-    <div class="partners">
-        <p>Yaaluwacare</p>
+    <div class="partners magic-box">
+        <h3>Yaaluwacare</h3>
         <p>Dit is ons vriendenhuis. 
             Gebouwd in etappes met hulp van de lokale bevolking en vrienden. 
             Oude vrienden maar ook nieuwe lokale vrienden. Wij leven 
@@ -158,7 +166,7 @@
             <br>
             Yaaluwa Care</p>
     </div>
-    <div class="partners">
+    <div class="partners magic-box">
         <h3><strong>Doc Care Clinic</strong></h3>
         <p>De Dog Care Clinic is zowel in Duitsland als in Sri Lanka 
             geregistreerd als een non-profitorganisatie. Marina Möbius 
@@ -186,13 +194,13 @@
         <a target="_blank" href="https://www.dogcare-clinic.com/de/"> Link: https://www.dogcare-clinic.com/de/</a>
     </div>
 </div>
-<div class="page-5">
+<div class="page-5" id="youth">
     <img class="background-jongeren" src="./imgs/background-jongeren.jpg" alt="background">
     <h2>Traject jongeren</h2>
 
     <div class="details-jongeren">
-        <img src="./imgs/jongeren_website 1.jpg" alt="jongeren">
-        <p>
+        <img src="./imgs/jongeren_website 1.jpg" alt="jongeren" class="hide-mobile">
+        <p class="magic-box">
             Onderdelen mogelijkheden:
             <br>
             -Voeding en sport
@@ -217,7 +225,7 @@
             <br>
         </p>
     </div>
-    <div class="verhaal-jongeren">
+    <div class="verhaal-jongeren magic-box">
         <p>
         Ongeacht de hulpvraag, gaan wij het gesprek aan. 
         Wat vraagt de jongere en wat wij kunnen bieden?
@@ -266,6 +274,6 @@
 </footer>
 
 
-    
+<script src="./main.js"></script>
 </body>
 </html>
