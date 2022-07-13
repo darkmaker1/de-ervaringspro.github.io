@@ -15,6 +15,7 @@ body{
     overflow-x: hidden;
     // width: 100vw;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 a{
  all: unset;
@@ -57,7 +58,7 @@ ul,li{
             height: 5rem;
             cursor: pointer;
             transition: all .5s ease-in-out;
-            opacity: 120%;
+            opacity: 100%;
           }
           .menu-btn-burger {
             width: 50px;
@@ -181,17 +182,21 @@ ul,li{
             };
     
             .title{
-                padding: 2rem;
+                padding: 2.5rem;
                 position: relative;
                 top: 10%;
-                left: 36%;
+                left: 50%;
                 transform: translate(-50%);
                 border: 6px solid $purple;
                 color: $purple;
                 border-radius: 96px 24px 96px 24px;
-                width: 43.5rem;
+                width: 33.5rem;
                 h2{
-                    font-size: 5rem;
+                    font-size: 3rem;
+                    background-color: $yellow;
+                    border-radius: 15px;
+                    display: inline-block;
+                    padding: .5rem;
                 }
             }
         }
@@ -204,7 +209,7 @@ ul,li{
         flex-direction: column-reverse;
         .background-img{
             height: 100%;
-            width: 120%;
+            width: 100%;
             position: absolute;
             z-index: -1;
             // -o-object-fit: cover;
@@ -212,6 +217,7 @@ ul,li{
         };
         h2 {
             color: $purple;
+            font-size: $h2-mobile;
             }
         .about-boxes{
             flex: 1;
@@ -271,7 +277,7 @@ ul,li{
         // height: 100vh;
         .background-img-locatie{
             height: 100%;
-            width: 120%;
+            width: 100%;
             position: absolute;
             z-index: -1;
         }
@@ -329,11 +335,10 @@ ul,li{
         // gap: 2rem;
         img{
             height: 100%;
-            width: 120%;
+            width: 100%;
             position: absolute;
             z-index: -1;
-        }
-;
+        };
         h2{
             color: $purple; 
             // position: absolute;
@@ -373,7 +378,7 @@ ul,li{
         position: relative;
         .background-jongeren{
             height: 100%;
-            width: 120%;
+            width: 100%;
             position: absolute;
             z-index: -1;
         }
@@ -505,7 +510,7 @@ p{
     .background-img{
         
         height: 100%;
-        width: 120%;
+        width: 100%;
         position: absolute;
         z-index: -1;
         // -o-object-fit: cover;
@@ -570,7 +575,7 @@ p{
     height: 100vh;
     .background-img-locatie{
         height: 100%;
-        width: 120%;
+        width: 100%;
         position: absolute;
         z-index: -1;
     }
@@ -624,7 +629,7 @@ p{
     position: relative;
     img{
         height: 100%;
-        width: 120%;
+        width: 100%;
         position: absolute;
         z-index: -1;
     }
@@ -669,7 +674,7 @@ p{
     position: relative;
     .background-jongeren{
         height: 100%;
-        width: 120%;
+        width: 100%;
         position: absolute;
         z-index: -1;
     }
